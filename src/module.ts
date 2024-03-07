@@ -2,7 +2,7 @@ import {
   defineNuxtModule,
   addPlugin,
   createResolver,
-  addImports,
+  addComponent,
 } from "@nuxt/kit";
 
 import { defu } from "defu";
@@ -11,7 +11,7 @@ import type { ModuleOptions } from "./types";
 
 import { name, version } from "../package.json";
 
-const importList = ["Splide", "SplideTrack", "SplideSlide"];
+const componentList = ["SplideTrack"];
 const cssList = {
   default: "@splidejs/vue-splide/css",
   skyblue: "@splidejs/vue-splide/css/skyblue",
@@ -28,7 +28,6 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt: "^3.0.0",
     },
   },
-  // Default configuration options of the Nuxt module
   defaults: {
     theme: "default",
   },
@@ -47,10 +46,11 @@ export default defineNuxtModule<ModuleOptions>({
 
     const themeCSS = cssList[options.theme ?? "default"];
 
-    importList.map((importName) => {
-      addImports({
-        name: importName,
-        from: "@splidejs/vue-splide",
+    componentList.map((componentName) => {
+      addComponent({
+        name: componentName,
+        export: componentName,
+        filePath: "@splidejs/vue-splide",
       });
     });
 

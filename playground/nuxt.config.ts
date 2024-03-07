@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
-  modules: ['../src/module'],
-  myModule: {},
-  devtools: { enabled: true }
-})
+  modules: ["../src/module"],
+  splide: {
+    theme: "default",
+  },
+  devtools: { enabled: true },
+});
