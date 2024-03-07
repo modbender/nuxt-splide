@@ -1,6 +1,6 @@
 {
   "name": "nuxt-splide",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "description": "Splide is lightweight slider/carousel, no dependencies, no lighthouse errors",
   "repository": "modbender/nuxt-splide",
   "keywords": [
