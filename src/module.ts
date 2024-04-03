@@ -11,7 +11,7 @@ import type { ModuleOptions } from "./types";
 
 import { name, version } from "../package.json";
 
-const componentList = ["SplideTrack"];
+const componentList = ["Splide", "SplideSlide", "SplideTrack"];
 const cssList = {
   default: "@splidejs/vue-splide/css",
   skyblue: "@splidejs/vue-splide/css/skyblue",
