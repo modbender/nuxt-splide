@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.1
+
+[compare changes](https://github.com/modbender/nuxt-splide/compare/v1.1.0...v1.1.1)
+
+### 🩹 Fixes
+
+- Try fixing auto import for components ([3ecce54](https://github.com/modbender/nuxt-splide/commit/3ecce54))
+
+### ❤️ Contributors
+
+- Modbender
+
 ## v1.1.0
 
 
