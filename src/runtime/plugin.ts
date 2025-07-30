@@ -1,8 +1,8 @@
-import { defineNuxtPlugin } from "#app";
+import { defineNuxtPlugin } from '#app'
 
-// @ts-ignore
-import VueSplide from "@splidejs/vue-splide";
+// @ts-expect-error: VueSplide type definition issue
+import VueSplide from '@splidejs/vue-splide'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(VueSplide);
-});
+  nuxtApp.vueApp.use(VueSplide)
+})

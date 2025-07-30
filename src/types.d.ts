@@ -1,4 +1,4 @@
-export type SplideThemes = "default" | "skyblue" | "sea-green" | "core";
+export type SplideThemes = 'default' | 'skyblue' | 'sea-green' | 'core'
 
 export interface ModuleOptions {
   /**
@@ -6,15 +6,15 @@ export interface ModuleOptions {
    *
    * @default 'default'
    */
-  theme: SplideThemes;
+  theme: SplideThemes
 }
 
-declare module "nuxt-splide" {
+declare module 'nuxt-splide' {
   interface NuxtConfig {
-    splide?: ModuleOptions;
+    splide?: ModuleOptions
   }
 
   interface NuxtOptions {
-    splide?: ModuleOptions;
+    splide?: ModuleOptions
   }
 }
