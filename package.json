@@ -23,16 +23,20 @@
   ],
   "license": "MIT",
   "packageManager": "pnpm@10.13.1",
-  "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
     }
   },
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
   "files": [
     "dist"
   ],
@@ -47,7 +51,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^4.0.2",
+    "@nuxt/kit": "^4.0.1",
     "@splidejs/vue-splide": "^0.6.12",
     "defu": "^6.1.4"
   },
